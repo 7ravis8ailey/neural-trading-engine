@@ -1,6 +1,10 @@
 [package]
 name = "neural-trading-engine"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"  # Change from 2024 to 2021 for stable compiler compatibility
 
 [dependencies]
+yahoo_finance_api = "2.0"
+chrono = "0.4"
+tokio = { version = "1.38", features = ["full"] }
+ruv-fann = "0.3"
